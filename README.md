@@ -1,8 +1,11 @@
 # RSS-Mobile-Reader
  
 ## Descrição:
-Esta aplicativo serve para rapidamente coletar artigos de noticias do site Raspberry PI News e mostrar de forma rapida um resumo do conteudo.
-Este sistema usa o serviço de RSS para coletar a informação e tambem disponelizar um link de acesso para o propio artigo
+Esta aplicativo serve para rapidamente coletar artigos de noticias dos site Raspberry PI News, OmgUbuntu (Linux Ubuntu) e Blender Nation. Ele mostrar de forma rapida um resumo do conteudo e links para os artigos
+
+Este sistema usa o serviço de RSS para coletar a informação e tambem disponelizar um link de acesso para o propio artigo.
+
+Ele também deixa o usuario favoritar artigos, essa informação é guardada em uma database MySQL.
 
 ## Dependencias:
  - react-navigation/native
