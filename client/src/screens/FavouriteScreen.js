@@ -116,6 +116,8 @@ export default function FavouriteScreen({route, navigation}){
                 <MaterialCommunityIcons name='reload' size={40} color={'white'} onPress={ () => {
                   updateData();
                   console.log(data);
+                  console.log(displayData);
+                  console.log(lista);
                 }} />
               </View>
             </TouchableHighlight>
