@@ -25,28 +25,74 @@ Clone o repositorio
 git clone https://github.com/NowhereCat/RSS-Mobile-Reader.git
 ```
 
-Instale react-native-rss-parser no projeto
+### Client
+Va para a pasta client
 ```
-npm install react-native-rss-parser --save
-```
-
-Va para a pasta my-project
-
-```
-cd my-project
+cd client
 ```
 
-Execute o projeto
+Instale as depencencias
 ```
+yarn install
+```
+
+Crie um arquivo .env com a sequinte estrutura:
+```Dotenv
+SUBMIT_IP=http://[IP DO SERVIDOR]:3001/item
+FETCH_IP=http://[IP DO SERVIDOR]:3001/itens
+DELETE_IP=http://[IP DO SERVIDOR]:3001/item
+```
+Substitua o [IP DO SERVIDOR] com o IP do servidor
+EX:
+http://192.0.0.0:3001/item
+
+### Database
+Crie uma database em MySQL, com a estrutura sequinte:
+```SQL
+CREATE TABLE Favourite(
+    favID INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    descr VARCHAR(255) NOT NULL,
+    link VARCHAR(255) NOT NULL,
+    published VARCHAR(255),
+    sourceType CHAR(1) DEFAULT('R'),
+    CHECK(sourceType = 'R' OR sourceType = 'U' OR sourceType = 'B')
+);
+```
+
+### Server
+Va para a pasta server
+```
+cd server
+```
+
+Instale as depencencias
+```
+yarn install
+```
+
+Crie um arquivo .env com a sequinte estrutura:
+```Dotenv
+HOST="localhost"
+USER="root"
+PASSWORD="password"
+DB="rss_reader"
+PORT=3306
+```
+Substitua o Host, Usuario, Schema, senha e port escrito no arquivo .env, para ser os mesmos da database que foi criada.
+
+## Iniciar Projeto
+Primeiro inicio o servidor:
+```
+cd server
+npm run dev
+```
+
+Depois inicie o projeto cliente e abrao em aplicativo EXPO
+```
+cd client
 yarn start
 ```
-
-**OBS: Caso tenho algum erro, crie um projeto EXPO e copie e cole os conteudos da pasta my-project**
-
-```
-yarn create expo-app my-project
-```
-
 
 ## Como usar:
 
