@@ -5,21 +5,32 @@ Esta aplicativo serve para rapidamente coletar artigos de noticias do site Raspb
 Este sistema usa o serviço de RSS para coletar a informação e tambem disponelizar um link de acesso para o propio artigo
 
 ## Dependencias:
- - [Node.JS](https://nodejs.org/en)
+ - react-navigation/native
+ - react-navigation/native-stack
+ - axios
+ - expo
+ - expo-status-bar
+ - react
+ - react-native
+ - react-native-rss-parser
+ - react-native-safe-area-context
+ - react-native-screens
+ - react-native-rss-parser
+ - cors
+ - dotenv
+ - express
+ - mysql2
+ - nodemon
 
- - [Yarn](https://www.npmjs.com/package/yarn)
+## Antes de instalar Instalar:
+### Instale Node.js
+[Node.JS](https://nodejs.org/en)
 
+### Instale yarn
 ```
 npm install --global yarn
 ```
-
- - [react-native-rss-parser](https://www.npmjs.com/package/react-native-rss-parser)
-
-```
-npm install react-native-rss-parser --save
-```
-
-## Instalar:
+## Como Instalar:
 Clone o repositorio
 ```
 git clone https://github.com/NowhereCat/RSS-Mobile-Reader.git
@@ -96,11 +107,5 @@ yarn start
 
 ## Como usar:
 
-### Clique no botão superior a direita para carregar ou recarregar a informação RSS
-![](https://i.ibb.co/jJJFm8N/1.png)![](https://i.ibb.co/J20qyPz/2.png)
-
-### Logo os 10 ultimos artigos de noticias serão carregados abaixo, com o titulo, descrição, link e data de postagem
-![](https://i.ibb.co/R0WKBhy/3.png)
-
-### Você pode digitar algo na barra de pesquisa para achar algo especifico
-![](https://i.ibb.co/Mk3kVtz/4.png)
+### Veja o video
+ - [LINK](https://www.youtube.com/watch?v=s1XEDgDe-0A)
