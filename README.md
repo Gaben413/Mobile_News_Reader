@@ -112,3 +112,10 @@ yarn start
 
 ### Veja o video
  - [LINK](https://www.youtube.com/watch?v=s1XEDgDe-0A)
+
+## Screenshots
+![Image 1](https://i.ibb.co/Hq4cQjq/Screenshot-20230609-143311-Expo-Go.jpg)
+![Image 2](https://i.ibb.co/hLLWHXJ/Screenshot-20230609-143331-Expo-Go.jpg)
+![Image 3](https://i.ibb.co/c65sc4W/Screenshot-20230609-143342-Expo-Go.jpg)
+![Image 4](https://i.ibb.co/Yjy1L1Z/Screenshot-20230609-143352-Expo-Go.jpg)
+![Image 5](https://i.ibb.co/HxKpyYx/Screenshot-20230609-143401-Expo-Go.jpg)
